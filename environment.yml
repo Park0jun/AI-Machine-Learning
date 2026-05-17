@@ -1,0 +1,40 @@
+name: ai_ml_final
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - pillow
+  - matplotlib
+  - ffmpeg
+  - pyyaml
+  - networkx
+
+  - pip:
+      # MediaPipe - BlazePose 3D 키포인트 추출
+      - mediapipe==0.10.21
+
+      # TensorFlow/Keras - MLP & Bi-LSTM 모델 학습
+      - tensorflow==2.15.0
+
+      # OpenCV - 영상 처리
+      - opencv-python==4.11.0.86
+
+      # PyTubeFix - YouTube 영상 다운로드
+      - pytubefix==10.2.1
+
+      # 유틸리티
+      - tqdm==4.67.1
+      - protobuf==4.25.3
+      - imageio
+      - imageio-ffmpeg
+      - rich
+      - websockets
+      - yourdfpy
+
+      # Viser - 3D 시각화
+      - viser
